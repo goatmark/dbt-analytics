@@ -1,1 +1,0 @@
-select 1 as id, 'test@example.com' as email
