@@ -67,7 +67,7 @@ recipe_flattened_metrics as (
         date_trunc('quarter', rlf."Date") recipe_quarter,
         count(distinct rlf."Plant") total_unique_plants
     from
-        public.recipe_log_flattened as rlf
+         {{ ref('recipe_log_flattened') }} as rlf
     group by
         recipe_quarter
 ),

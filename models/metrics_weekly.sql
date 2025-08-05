@@ -67,7 +67,7 @@ exercise_metrics as (
         date_trunc('week', rlf."Date") recipe_week
         , count(distinct rlf."Plant") total_unique_plants
     from
-        public.recipe_log_flattened as rlf
+         {{ ref('recipe_log_flattened') }} as rlf
     group by
         recipe_week
 )
