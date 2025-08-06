@@ -92,11 +92,11 @@ select
     -- Execise Metrics
     , em.total_workouts
     , em.total_runs
-    , em.total_miles
-    , em.total_calories
-    , em.total_minutes
-    , em.total_reps
-    , em.total_sets
+    , em.total_miles::float8
+    , em.total_calories::float8
+    , em.total_minutes::float8
+    , em.total_reps::float8
+    , em.total_sets::float8
     
     -- Weight Metrics
     , wm.total_weight_measurements
