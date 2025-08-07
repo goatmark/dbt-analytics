@@ -1,11 +1,11 @@
 select
-    rl."Dish" plant
+    rl."Dish" dish
     , date_trunc('month', rl."Date") date_period
     , count(*) total_count
 from
     public.recipe_log as rl
 group by
-    plant
+    dish
     , date_period
 order by
     date_period desc
