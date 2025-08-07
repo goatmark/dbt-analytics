@@ -1,9 +1,9 @@
 select
-    rlf."Plant" plant
-    , date_trunc('month', rlf."Date") date_period
+    rl."Dish" plant
+    , date_trunc('week', rl."Date") date_period
     , count(*) total_count
 from
-    {{ ref ('recipe_log_flattened')}} as rlf
+    public.recipe_log as rl
 group by
     plant
     , date_period
