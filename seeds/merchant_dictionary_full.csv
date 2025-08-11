@@ -1,0 +1,493 @@
+merchant_key,merchant_name,pattern_regex,category,subcategory,billing_model,spend_nature,discretion,gl_code,account_name
+bilt,Bilt,BPS\*BILT|BILT( REWARDS)?\b,Housing,Rent,subscription,service,mandatory,5010,Housing—Rent
+whole_foods,Whole Foods,Whole\ Foods,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+restaurants_misc,Restaurants (misc),^TST[\*-]|^TST-,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+american_airlines,American Airlines,American\ Airlines,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+ova,Ova,Ova,Health & Wellness,Fertility,one_off,service,discretionary,5550,Health—Fertility
+cort_furniture,CORT Furniture,CORT FURNITURE (RENTAL|RNTL),Housing,Furniture Rental,subscription,service,discretionary,5055,Housing—Furniture Rental
+amazon,Amazon,Amazon\.com\*|AMAZON MKTPL|AMZN Mktp|AMZNMktplace|AMAZON MKTPLACE PMTS,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+kenya_airways,Kenya Airways,Kenya\ Airways,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+delta_air_lines,Delta Air Lines,Delta\ Air\ Lines,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+yardi,Yardi,\bYSI\b|YARDI,Housing,Rent,subscription,service,mandatory,5010,Housing—Rent
+airbnb,Airbnb,^AIRBNB(\*| ),Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+aaa,AAA,AAA (INSURANCE|ACG|CLUB/INSUR),Subscriptions & Software,Memberships,subscription,service,discretionary,5660,Subs—Memberships
+lyft,Lyft,Lyft,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+uber,Uber,UBER\s+\*?TRIP|UBER\s+TRIP,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+emirates,Emirates,Emirates,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+doordash,DoorDash,DoorDash,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,5125,Food—Delivery Platforms
+booking_com,Booking.com,BKG\*BOOKING\.COM HOTEL|BOOKING\.COM|Cars on Booking,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+kasa_living,Kasa Living,Kasa Living,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+modernhaus_soho,Modernhaus Soho,Modernhaus\ Soho,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+british_airways,British Airways,British\ Airways,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+atandt,AT&T,ATT\*BILL PAYMENT,Housing,Telecom/Internet,subscription,service,mandatory,5020,Housing—Telecom/Internet
+openai,OpenAI,OPENAI|CHATGPT SUBSCR,Subscriptions & Software,AI Tools,subscription,service,discretionary,5630,Subs—AI Tools
+blind_barber,Blind Barber,Blind\ Barber,Personal Services,Personal Care,one_off,service,discretionary,6110,Services—Personal Care
+uchicago_medicine,UChicago Medicine,UChicago\ Medicine,Health & Wellness,Medical Services,one_off,service,mandatory,5510,Health—Medical Services
+uber_eats,Uber Eats,UBER\s+\*EATS,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,5125,Food—Delivery Platforms
+niu_technologies,NIU Technologies,NIU\ Technologies,Transportation,Equipment (CapEx),one_off,capital,discretionary,5270,Transport—Equipment (CapEx)
+efay_rent_a_car,EFAY Rent A Car,EFAY\ Rent\ A\ Car,Transportation,Car Rental,one_off,service,discretionary,5260,Transport—Car Rental
+smyth_the_loyalist,Smyth / The Loyalist,Smyth\ /\ The\ Loyalist,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+next,Next,Next,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+booth_groups,Booth Groups,Booth\ Groups,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+verizon_wireless,Verizon Wireless,VZWRLSS\*APOCC VISN,Housing,Telecom/Internet,subscription,service,mandatory,5020,Housing—Telecom/Internet
+hugo_boss,Hugo Boss,Hugo\ Boss,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+deliveroo,Deliveroo,Deliveroo,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,5125,Food—Delivery Platforms
+eventbrite,Eventbrite,Eventbrite,Entertainment & Events,Events,one_off,consumption,discretionary,5720,Entertainment—Events
+curb_taxi,Curb Taxi,CURB .*TAXI,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+maple_and_ash,Maple & Ash,Maple\ \&\ Ash|Maple\ \&amp;\ Ash,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+netflix,Netflix,"^NETFLIX|NETFLIX, INC\.",Subscriptions & Software,Streaming/Media,subscription,service,discretionary,5640,Subs—Streaming/Media
+grand_canyon_maswik,Grand Canyon Maswik,Grand\ Canyon\ Maswik,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+girl_and_the_goat,Girl & The Goat,Girl\ \&\ The\ Goat|Girl\ \&amp;\ The\ Goat,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+sainsbury_s,Sainsbury's,Sainsbury's,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+google,Google,GOOGLE \*CLOUD|GOOGLE \*(GSUITE|MICROSOFT)|^Google One$|GOOGLE \*MICROSOFT,Subscriptions & Software,Cloud/Infra,mixed,service,discretionary,5610,Subs—Cloud/Infra
+lake_anesthesia,Lake Anesthesia,Lake\ Anesthesia,Health & Wellness,Medical Services,one_off,service,mandatory,5510,Health—Medical Services
+bloomingdale_s,Bloomingdale's,Bloomingdale's,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+notion,Notion,Notion,Subscriptions & Software,Productivity/Tools,subscription,service,discretionary,5620,Subs—Productivity/Tools
+amazon_prime,Amazon Prime,^AMAZON PRIME(?!.*VIDEO),Subscriptions & Software,Memberships,subscription,service,discretionary,5660,Subs—Memberships
+misfits_market,Misfits Market,Misfits\ Market,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+layla_grill,Layla Grill,Layla\ Grill,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+ballie_ballerson_shoreditch,Ballie Ballerson (Shoreditch),Ballie\ Ballerson\ \(Shoreditch\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+flashdancers,FlashDancers,FlashDancers,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+et_car_hire,ET Car Hire,ET\ Car\ Hire,Transportation,Car Rental,one_off,service,discretionary,5260,Transport—Car Rental
+athletico,Athletico,Athletico,Health & Wellness,Medical Services,one_off,service,mandatory,5510,Health—Medical Services
+wayfair,Wayfair,Wayfair,Shopping,Home Goods,one_off,capital,discretionary,5430,Shopping—Home Goods
+eataly,Eataly,Eataly,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+mart_parc_parking,Mart Parc Parking,CH312 - MART PARC|WABASH-RANDOLPH|MART PARC - OR,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+city_of_chicago,City of Chicago,City\ of\ Chicago,Government & Financial,Taxes & Permits,one_off,service,mandatory,5910,Gov/Fin—Taxes & Permits
+limitless,Limitless,Limitless,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+sports_and_diver_club,Sports & Diver Club,Sports\ \&\ Diver\ Club|Sports\ \&amp;\ Diver\ Club,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+chicago_touch,Chicago Touch,Chicago\ Touch,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+midtown_cafe,Midtown Cafe,Midtown\ Cafe,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+west_loop_market,West Loop Market,West\ Loop\ Market,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+lululemon,Lululemon,Lululemon,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+joong_boo_market,Joong Boo Market,Joong\ Boo\ Market,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+target,Target,Target,Shopping,Home Goods,one_off,capital,discretionary,5430,Shopping—Home Goods
+lemonade,Lemonade,Lemonade,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cvs,CVS,CVS,Health & Wellness,Pharmacy/OTC,one_off,service,mandatory,5530,Health—Pharmacy/OTC
+zenbusiness,ZenBusiness,ZenBusiness,Subscriptions & Software,Cloud/Infra,mixed,service,discretionary,5610,Subs—Cloud/Infra
+delis_supermarket_and_coffee,Delis Supermarket & Coffee,Delis\ Supermarket\ \&\ Coffee|Delis\ Supermarket\ \&amp;\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+live_lean_rx,Live Lean RX,Live\ Lean\ RX,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+alamo_rent_a_car,Alamo Rent A Car,Alamo\ Rent\ A\ Car,Transportation,Car Rental,one_off,service,discretionary,5260,Transport—Car Rental
+bob_bob_ricard,Bob Bob Ricard,Bob\ Bob\ Ricard,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+fluidfreeride,FluidFreeRide,FluidFreeRide,Transportation,Equipment (CapEx),one_off,capital,discretionary,5270,Transport—Equipment (CapEx)
+west_loop_cleaners,West Loop Cleaners,West\ Loop\ Cleaners,Personal Services,Laundry/Cleaning,one_off,service,discretionary,6120,Services—Laundry/Cleaning
+gibsons_italia,Gibsons Italia,Gibsons\ Italia,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+toyota_of_lincoln_park,Toyota of Lincoln Park,Toyota\ of\ Lincoln\ Park,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+liberty_london,Liberty London,Liberty\ London,Shopping,Home Goods,one_off,capital,discretionary,5430,Shopping—Home Goods
+madewell,Madewell,Madewell,Shopping,Home Goods,one_off,capital,discretionary,5430,Shopping—Home Goods
+eastside_amstar,Eastside Amstar,Eastside\ Amstar,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+my_place_soho,My Place Soho,My\ Place\ Soho,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+james_elliott_butchers,James Elliott Butchers,James\ Elliott\ Butchers,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cmt_taxi,CMT Taxi,CMT\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+arlo_chicago_fandb,ARLO Chicago (F&B),ARLO\ Chicago\ \(F\&B\)|ARLO\ Chicago\ \(F\&amp;B\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+le_colonial,Le Colonial,Le\ Colonial,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_palomar,The Palomar,The\ Palomar,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+gibsons_hugo_s,Gibsons Hugo's,Gibsons\ Hugo's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+render,Render,RENDER\.COM,Subscriptions & Software,Cloud/Infra,subscription,service,discretionary,5610,Subs—Cloud/Infra
+the_east_pole,The East Pole,The\ East\ Pole,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+tfl,TfL,^TFL TRAVEL CH,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+apple,Apple,APPLE\.COM/BILL,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+shakespeare_s_head,Shakespeare's Head,Shakespeare's\ Head,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+godaddy,GoDaddy,DNH\*GODADDY\.COM,Subscriptions & Software,Cloud/Infra,mixed,service,discretionary,5610,Subs—Cloud/Infra
+hoppers_soho,Hoppers Soho,Hoppers\ Soho,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+highjump_chicago,HighJump Chicago,HighJump\ Chicago,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+beauty_and_essex,Beauty & Essex,Beauty\ \&\ Essex|Beauty\ \&amp;\ Essex,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+carrefour,Carrefour,Carrefour,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pure_dental_spa,Pure Dental Spa,Pure\ Dental\ Spa,Health & Wellness,Dental,one_off,service,mandatory,5520,Health—Dental
+binny_s,Binny's,Binny's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+doc_b_s,Doc B's,Doc\ B's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pylos,Pylos,Pylos,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+aspen_place_flagstaff,Aspen Place (Flagstaff),Aspen\ Place\ \(Flagstaff\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+spotify,Spotify,^Spotify |^SPOTIFY ,Subscriptions & Software,Streaming/Media,subscription,service,discretionary,5640,Subs—Streaming/Media
+farmair_market,FarmAir Market,FarmAir\ Market,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+uc_hub,UC Hub,UC\ Hub,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+john_lewis,John Lewis,John\ Lewis,Shopping,Home Goods,one_off,capital,discretionary,5430,Shopping—Home Goods
+hotel_fraye,Hotel Fraye,HOTEL FRAYE,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+the_dutch,The Dutch,The\ Dutch,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+alliance_bakery,Alliance Bakery,Alliance\ Bakery,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+zuma,Zuma,Zuma,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+brindisa_soho,Brindisa Soho,Brindisa\ Soho,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+jw_marriott_marquis,JW Marriott Marquis,MARRIOTT JW MARQUIS,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+elephant_and_castle_wabash,Elephant & Castle (Wabash),Elephant\ \&\ Castle\ \(Wabash\)|Elephant\ \&amp;\ Castle\ \(Wabash\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+goose_island_ord,Goose Island (ORD),Goose\ Island\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+illinois_secretary_of_state,Illinois Secretary of State,Illinois\ Secretary\ of\ State,Government & Financial,Taxes & Permits,one_off,service,mandatory,5910,Gov/Fin—Taxes & Permits
+plp_events,PLP Events,PLP\ Events,Entertainment & Events,Events,one_off,consumption,discretionary,5720,Entertainment—Events
+sweetgreen,Sweetgreen,Sweetgreen,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pdl_barbershop,PDL Barbershop,PDL\ Barbershop,Personal Services,Personal Care,one_off,service,discretionary,6110,Services—Personal Care
+blacklock_canary_wharf,Blacklock Canary Wharf,Blacklock\ Canary\ Wharf,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+careem,Careem,Careem,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+il_vizietto_di_cortina,Il Vizietto di Cortina,Il\ Vizietto\ di\ Cortina,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+kenya_eta,Kenya eTA,Kenya\ eTA,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+renee_malls_ltd,Renee Malls Ltd,Renee\ Malls\ Ltd,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+phoenicia_mediterranean,Phoenicia Mediterranean,Phoenicia\ Mediterranean,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+granger_co,Granger Co.,Granger\ Co\.,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+west_loop_pic,West Loop - PIC,West\ Loop\ \-\ PIC,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cursor,Cursor,"CURSOR(,| )? ?AI POWERED IDE|CURSOR USAGE",Subscriptions & Software,Productivity/Tools,subscription,service,discretionary,5620,Subs—Productivity/Tools
+banger_s_austin,Banger's Austin,Banger's\ Austin,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+ng_immigration_visa,NG Immigration Visa,NG\ Immigration\ Visa,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+coursera,Coursera,COURSRA\*,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+rocca,Rocca,Rocca,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+red_door_saloon,Red Door Saloon,Red\ Door\ Saloon,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+taverna_the_domain,Taverna - The Domain,Taverna\ \-\ The\ Domain,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cityfront_garage,Cityfront Garage,Cityfront\ Garage,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+sofitel_new_york,Sofitel New York,SOFITEL NEW YORK,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+olympus_hills_bowling_lanes,Olympus Hills Bowling Lanes,Olympus\ Hills\ Bowling\ Lanes,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+uncorked_2017,Uncorked 2017,Uncorked\ 2017,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+parkchicago,ParkChicago,PARK CHICAGO,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+tesco,Tesco,Tesco,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+abruzzo_ewr_c1,Abruzzo (EWR C1),Abruzzo\ \(EWR\ C1\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+printwithme,PrintWithMe,PRINTWITHME,Personal Services,Printing/Photo,one_off,service,discretionary,6140,Services—Printing/Photo
+la_vita_e_bella,La Vita e Bella,La\ Vita\ e\ Bella,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+summit_retail,SUMMIT Retail,SUMMIT\ Retail,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+gift_baskets,Gift Baskets,Gift\ Baskets,Gifts & Donations,Gifts,one_off,service,discretionary,6010,Gifts—Gifts
+texaco,Texaco,Texaco,Transportation,Fuel,one_off,service,mandatory,5240,Transport—Fuel
+liquor_bar_ord,Liquor Bar (ORD),Liquor\ Bar\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+arden_barbershop,Arden Barbershop,Arden\ Barbershop,Personal Services,Personal Care,one_off,service,discretionary,6110,Services—Personal Care
+mandarin_oriental,Mandarin Oriental,Mandarin\ Oriental,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+market_street_grill,Market Street Grill,Market\ Street\ Grill,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+phebe_s_tavern,Phebe's Tavern,Phebe's\ Tavern,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+intelligentsia_coffee,Intelligentsia Coffee,Intelligentsia\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+the_berkshire_room,The Berkshire Room,The\ Berkshire\ Room,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+grand_cru,Grand Cru,Grand\ Cru,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+new_york_times,New York Times,NYTimes,Subscriptions & Software,News & Publications,subscription,service,discretionary,5650,Subs—News & Publications
+nola_eatery_and_social_house,Nola Eatery & Social House,Nola\ Eatery\ \&\ Social\ House|Nola\ Eatery\ \&amp;\ Social\ House,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+uchicago_wolfgang_puck,UChicago - Wolfgang Puck,UChicago\ \-\ Wolfgang\ Puck,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+muze_club,Muze Club,Muze\ Club,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+ikea,IKEA,IKEA,Shopping,Home Goods,one_off,capital,discretionary,5430,Shopping—Home Goods
+hub_51,Hub 51,Hub\ 51,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+broken_english_taco_pub,Broken English Taco Pub,Broken\ English\ Taco\ Pub,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+logs_and_embers,Logs and Embers,Logs\ and\ Embers,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+instacart,Instacart,Instacart,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,5125,Food—Delivery Platforms
+lime,Lime,Lime,Transportation,Micromobility,one_off,service,discretionary,5250,Transport—Micromobility
+shotshak,Shotshak,Shotshak,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mcdonald_s,McDonald's,McDonald's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+starbucks,Starbucks,Starbucks,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+mayhem_beer_and_sandwiches,Mayhem Beer & Sandwiches,Mayhem\ Beer\ \&\ Sandwiches|Mayhem\ Beer\ \&amp;\ Sandwiches,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+casa_de_sonia,Casa de Sonia,Casa\ de\ Sonia,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_duck_hook,The Duck Hook,The\ Duck\ Hook,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+prohibition_barber_co,Prohibition Barber Co,Prohibition\ Barber\ Co,Personal Services,Personal Care,one_off,service,discretionary,6110,Services—Personal Care
+le_meridien_mina_seyahi,Le Meridien Mina Seyahi,LE MERIDIEN MINA SEYAHI,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+eko_hotels,Eko Hotels,Eko\ Hotels,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+house_of_blues_chicago,House of Blues Chicago,House\ of\ Blues\ Chicago,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+flats_fix,Flats Fix,Flats\ Fix,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+worthwild,Worthwild,Worthwild,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pga,PGA,PGA,Entertainment & Events,Events,one_off,consumption,discretionary,5720,Entertainment—Events
+martin_s_bar_b_que_joint,Martin's Bar-B-Que Joint,Martin's\ Bar\-B\-Que\ Joint,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+kilis_kitchen,Kilis Kitchen,Kilis\ Kitchen,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+trademark_hotel,Trademark Hotel,TRADEMARK HOTEL,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+skullfade_barbers,Skullfade Barbers,Skullfade\ Barbers,Personal Services,Personal Care,one_off,service,discretionary,6110,Services—Personal Care
+eva,EVA,EVA,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+bp,BP,^BP#\d+,Transportation,Fuel,one_off,service,mandatory,5240,Transport—Fuel
+atlanta_airport,Atlanta Airport,Atlanta\ Airport,Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+mattori_s_open_market,Mattori's Open Market,Mattori's\ Open\ Market,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+bocas,Bocas,Bocas,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+beyond_the_pale,Beyond the Pale,Beyond\ the\ Pale,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+metropolis_parking,Metropolis Parking,Metropolis\ Parking,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+venture_crawl_afterparty,Venture Crawl Afterparty,Venture\ Crawl\ Afterparty,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+prime_video,Prime Video,^Prime Video ,Subscriptions & Software,Streaming/Media,subscription,service,discretionary,5640,Subs—Streaming/Media
+zona_cocina,Zona Cocina,Zona\ Cocina,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+andy_s_greek_taverna,Andy's Greek Taverna,Andy's\ Greek\ Taverna,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+rawhide,Rawhide,Rawhide,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+gioia_ristorante,Gioia Ristorante,Gioia\ Ristorante,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pera_soho,Pera Soho,Pera\ Soho,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+beta_gamma_sigma,Beta Gamma Sigma,Beta\ Gamma\ Sigma,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+slim_jim_s_liquor_store,Slim Jim's Liquor Store,Slim\ Jim's\ Liquor\ Store,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+white_rabbit_ventures,White Rabbit Ventures,White\ Rabbit\ Ventures,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mcgettigan_s,McGettigan's,McGettigan's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+totes_isotoner,Totes Isotoner,Totes\ Isotoner,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+helix_pay,Helix Pay,Helix\ Pay,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+weekday,Weekday,Weekday,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+card_interest,Card Interest,INTEREST CHARGE ON PURCHASES,Government & Financial,Fees & Interest,one_off,service,mandatory,5920,Gov/Fin—Fees & Interest
+center_parcs_fandb,Center Parcs F&B,Center\ Parcs\ F\&B|Center\ Parcs\ F\&amp;B,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+good_night_sonny,Good Night Sonny,Good\ Night\ Sonny,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+wildcraft_kitchen,Wildcraft Kitchen,Wildcraft\ Kitchen,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+salem_express_limo,Salem Express Limo,Salem\ Express\ Limo,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+golden_sands,Golden Sands,Golden\ Sands,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+duck_duck_goat,Duck Duck Goat,Duck\ Duck\ Goat,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+house_of_yes,House of Yes,House\ of\ Yes,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+london_taxi,London Taxi,London\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+jfk_beacon_bar,JFK Beacon Bar,JFK\ Beacon\ Bar,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+mta_subway,MTA Subway,^MTA\*NYCT PAYGO,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+guggenheim_museum,Guggenheim Museum,Guggenheim\ Museum,Entertainment & Events,Attractions,one_off,consumption,discretionary,5710,Entertainment—Attractions
+laundryheap,Laundryheap,Laundryheap,Personal Services,Laundry/Cleaning,one_off,service,discretionary,6120,Services—Laundry/Cleaning
+etsy,Etsy,Etsy,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pianos,Pianos,Pianos,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+gloria_s_seafood_city,Gloria's Seafood City,Gloria's\ Seafood\ City,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+ivy_granary_square,Ivy Granary Square,Ivy\ Granary\ Square,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nw1_dental_care,NW1 Dental Care,NW1\ Dental\ Care,Health & Wellness,Dental,one_off,service,mandatory,5520,Health—Dental
+vodafone_top_up,Vodafone Top Up,Vodafone\ Top\ Up,Housing,Telecom/Internet,subscription,service,mandatory,5020,Housing—Telecom/Internet
+o_leary_s_public_house,O'Leary's Public House,O'Leary's\ Public\ House,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+domino_s,Domino's,Domino's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+art_institute_of_chicago,Art Institute of Chicago,Art\ Institute\ of\ Chicago,Entertainment & Events,Attractions,one_off,consumption,discretionary,5710,Entertainment—Attractions
+tgi_friday_s,TGI Friday's,TGI\ Friday's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nyc_taxi,NYC Taxi,^NYC TAXI ,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+bait_maryam,Bait Maryam,Bait\ Maryam,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nike,Nike,Nike,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+thames_water,Thames Water,Thames\ Water,Housing,Utilities,subscription,service,mandatory,5030,Housing—Utilities
+lock_stock_and_barrel,"Lock, Stock & Barrel","Lock,\ Stock\ \&\ Barrel|Lock,\ Stock\ \&amp;\ Barrel",Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+now_or_never_coffee,Now or Never Coffee,Now\ or\ Never\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+macy_s,Macy's,Macy's,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+linkedin_premium,LinkedIn Premium,LinkedIn\ Premium,Subscriptions & Software,Productivity/Tools,subscription,service,discretionary,5620,Subs—Productivity/Tools
+bla_bla_beach_club,Bla Bla Beach Club,Bla\ Bla\ Beach\ Club,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+the_king_s_head,The King's Head,The\ King's\ Head,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+ventra,Ventra,Ventra,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+illinois_department_of_revenue,Illinois Department of Revenue,Illinois\ Department\ of\ Revenue,Government & Financial,Taxes & Permits,one_off,service,mandatory,5910,Gov/Fin—Taxes & Permits
+camden_local,Camden Local,Camden\ Local,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cofco_limited,COFCO Limited,COFCO\ Limited,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+jumpin_jacks_modernhaus,Jumpin Jacks (Modernhaus),Jumpin\ Jacks\ \(Modernhaus\),Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+ryman,Ryman,Ryman,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+k1_klub_house,K1 Klub House,K1\ Klub\ House,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+hole_in_the_wall,Hole In The Wall,Hole\ In\ The\ Wall,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+total_energies,Total Energies,Total\ Energies,Transportation,Fuel,one_off,service,mandatory,5240,Transport—Fuel
+rocky_sporting_club,Rocky Sporting Club,Rocky\ Sporting\ Club,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+iconoclad,Iconoclad,Iconoclad,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+google_one,Google One,^GOOGLE \*Google One,Subscriptions & Software,Cloud/Infra,subscription,service,discretionary,5610,Subs—Cloud/Infra
+dine_it_4ward,Dine-It-4ward,Dine\-It\-4ward,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+blackwell_s,Blackwell's,Blackwell's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+uchicago_gifts,UChicago Gifts,UChicago\ Gifts,Gifts & Donations,Gifts,one_off,service,discretionary,6010,Gifts—Gifts
+hustlesasa,HustleSasa,HustleSasa,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+emporio_del_grano,Emporio del Grano,Emporio\ del\ Grano,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+24_seven_mini_mart,24 Seven Mini Mart,24\ Seven\ Mini\ Mart,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+careem_food,Careem Food,Careem\ Food,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,5125,Food—Delivery Platforms
+heathrow_express,Heathrow Express,^HEATHROW EXPRESS,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+bert_s_car_wash,Bert's Car Wash,Bert's\ Car\ Wash,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+fairgrounds_coffee,Fairgrounds Coffee,Fairgrounds\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+the_bull,The Bull,The\ Bull,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+tac_bar_jamaica,TAC Bar Jamaica,TAC\ Bar\ Jamaica,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+zaza_smoke_shop,ZaZa Smoke Shop,ZaZa\ Smoke\ Shop,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+levy_united_center,Levy (United Center),LEVY@ .*BLACKHAWKS,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+havana_restaurant,Havana Restaurant,Havana\ Restaurant,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+garfield_super_save,Garfield Super Save,Garfield\ Super\ Save,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+time_out_market_chicago,Time Out Market Chicago,Time\ Out\ Market\ Chicago,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+maxzi_the_good_food,Maxzi The Good Food,Maxzi\ The\ Good\ Food,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+mta_lirr,MTA LIRR,^MTA\*LIRR,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+dubai_taxi,Dubai Taxi,Dubai\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+interpark,InterPark,INTERPARK LLC,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+liquorama,Liquorama,Liquorama,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+draco_restaurants,Draco Restaurants,Draco\ Restaurants,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+luke_bryan,Luke Bryan,Luke\ Bryan,Entertainment & Events,Events,one_off,consumption,discretionary,5720,Entertainment—Events
+cars_taxi,Cars Taxi,Cars\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+flatiron_coffee_jfk,Flatiron Coffee (JFK),Flatiron\ Coffee\ \(JFK\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+tiny_tapp_and_cafe,Tiny Tapp & Cafe,Tiny\ Tapp\ \&\ Cafe|Tiny\ Tapp\ \&amp;\ Cafe,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+le_grand_comptoir_jfk,Le Grand Comptoir (JFK),Le\ Grand\ Comptoir\ \(JFK\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+airport_retail_enterprises,Airport Retail Enterprises,Airport\ Retail\ Enterprises,Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+whsmith_heathrow_t3,WHSmith Heathrow T3,WHSmith\ Heathrow\ T3,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+strawberry_hill,Strawberry Hill,Strawberry\ Hill,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+publican_ord,Publican (ORD),Publican\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+chandarana_supermarket,Chandarana Supermarket,Chandarana\ Supermarket,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+mb_hospitality,MB Hospitality,MB\ Hospitality,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+lyric_theatre,Lyric Theatre,Lyric\ Theatre,Entertainment & Events,Events,one_off,consumption,discretionary,5720,Entertainment—Events
+steam,Steam,Steam,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+four_seasons_adorn_bar,Four Seasons Adorn Bar,Four\ Seasons\ Adorn\ Bar,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+gail_s_islington,GAIL's Islington,GAIL's\ Islington,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mellow_mushroom,Mellow Mushroom,Mellow\ Mushroom,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nairobi_street_kitchen,Nairobi Street Kitchen,Nairobi\ Street\ Kitchen,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+big_time_boots,Big Time Boots,Big\ Time\ Boots,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+ssp_uk,SSP UK,SSP\ UK,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+jin_bo_law,Jin Bo Law,Jin\ Bo\ Law,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+p_bar_3,P - Bar 3,P\ \-\ Bar\ 3,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+careem_quik,Careem Quik,Careem\ Quik,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,5125,Food—Delivery Platforms
+whiskey_river,Whiskey River,Whiskey\ River,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+grand_canyon_national_park,Grand Canyon National Park,Grand\ Canyon\ National\ Park,Entertainment & Events,Attractions,one_off,consumption,discretionary,5710,Entertainment—Attractions
+forever_sales_enterprise,Forever Sales Enterprise,Forever\ Sales\ Enterprise,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+60_e_lake_street,60 E. Lake Street,60\ E\.\ Lake\ Street,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+terra_sol_hospitality,Terra Sol Hospitality,Terra\ Sol\ Hospitality,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+paddle,Paddle,Paddle,Subscriptions & Software,Cloud/Infra,mixed,service,discretionary,5610,Subs—Cloud/Infra
+macdougal_street_ale_house,MacDougal Street Ale House,MacDougal\ Street\ Ale\ House,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+bookstore_st840,Bookstore ST840,Bookstore\ ST840,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+manchu_wok_ord,Manchu Wok (ORD),Manchu\ Wok\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+waitrose,Waitrose,Waitrose,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+sazerac_phx,Sazerac (PHX),Sazerac\ \(PHX\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pressure_smoke_and_vape,Pressure Smoke & Vape,Pressure\ Smoke\ \&\ Vape|Pressure\ Smoke\ \&amp;\ Vape,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cock_and_lion,Cock & Lion,Cock\ \&\ Lion|Cock\ \&amp;\ Lion,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mcnamara_airport_mezzanine,McNamara Airport Mezzanine,McNamara\ Airport\ Mezzanine,Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+angel_orient_zettle,Angel Orient (Zettle),Angel\ Orient\ \(Zettle\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+uinta_brewing,Uinta Brewing,Uinta\ Brewing,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+blue_bottle_coffee,Blue Bottle Coffee,Blue\ Bottle\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+thai_street_food,Thai Street Food,Thai\ Street\ Food,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_shops_at_north_bridge_garage,The Shops at North Bridge (Garage),The\ Shops\ at\ North\ Bridge\ \(Garage\),Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+xai,xAI,xAI,Subscriptions & Software,AI Tools,subscription,service,discretionary,5630,Subs—AI Tools
+heathrow_t3_budweiser,Heathrow T3 Budweiser,Heathrow\ T3\ Budweiser,Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+whiskey_street,Whiskey Street,Whiskey\ Street,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+card_late_fee,Card Late Fee,LATE FEE,Government & Financial,Fees & Interest,one_off,service,mandatory,5920,Gov/Fin—Fees & Interest
+neal_s_yard_dairy,Neal's Yard Dairy,Neal's\ Yard\ Dairy,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+spuntino,Spuntino,Spuntino,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+green_pig_pub,Green Pig Pub,Green\ Pig\ Pub,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+wasatch_brew_pub,Wasatch Brew Pub,Wasatch\ Brew\ Pub,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+philippe_conticini,Philippe Conticini,Philippe\ Conticini,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+euphorium_bakery,Euphorium Bakery,Euphorium\ Bakery,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+susie_s_fine_baked_goods,Susie's Fine Baked Goods,Susie's\ Fine\ Baked\ Goods,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+zaro_s_bakery,Zaro's Bakery,Zaro's\ Bakery,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+p_bar_2,P - Bar 2,P\ \-\ Bar\ 2,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+salt_lake_roasting_co,Salt Lake Roasting Co,Salt\ Lake\ Roasting\ Co,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+hunt_and_fish_lga,Hunt & Fish (LGA),Hunt\ \&\ Fish\ \(LGA\)|Hunt\ \&amp;\ Fish\ \(LGA\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+circle_k,Circle K,Circle\ K,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_enterprise,The Enterprise,The\ Enterprise,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+xs_bar,XS Bar,XS\ Bar,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+united_airlines,United Airlines,United\ Airlines,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+toad_hall,Toad Hall,Toad\ Hall,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+spanish_court_hotel,Spanish Court Hotel,Spanish\ Court\ Hotel,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+asmara_entertainment,Asmara Entertainment,Asmara\ Entertainment,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+bubbles_ord,Bubbles (ORD),Bubbles\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+damn_gravity_books,Damn Gravity Books,Damn\ Gravity\ Books,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+noodles_etc,Noodles Etc,Noodles\ Etc,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+flask,Flask,Flask,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+homeburger,Homeburger,Homeburger,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+city_of_austin_parks_and_rec,City of Austin Parks & Rec,City\ of\ Austin\ Parks\ \&\ Rec|City\ of\ Austin\ Parks\ \&amp;\ Rec,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pickl_catering,Pickl Catering,Pickl\ Catering,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+americano,Americano,Americano,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+holly_bush,Holly Bush,Holly\ Bush,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+ciaran_hughes_zettle,Ciaran Hughes (Zettle),Ciaran\ Hughes\ \(Zettle\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+v_and_p_fox_locksmiths,V & P Fox Locksmiths,V\ \&\ P\ Fox\ Locksmiths|V\ \&amp;\ P\ Fox\ Locksmiths,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+white_horse,White Horse,White\ Horse,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+hudson_london_taxi,Hudson London Taxi,Hudson\ London\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+ben_s_pizzeria,Ben's Pizzeria,Ben's\ Pizzeria,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+microsoft_store,Microsoft Store,Microsoft\ Store,Shopping,Electronics,one_off,capital,discretionary,5420,Shopping—Electronics
+wifi_onboard,WiFi Onboard,WiFi\ Onboard,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mister_wright_fine_wines,Mister Wright Fine Wines,Mister\ Wright\ Fine\ Wines,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+commons_club,Commons Club,Commons\ Club,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+licensed_taxi,Licensed Taxi,Licensed\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+palm_restaurant_jfk,Palm Restaurant (JFK),Palm\ Restaurant\ \(JFK\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+seoul_taco,Seoul Taco,Seoul\ Taco,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_river_cafe,The River Cafe,The\ River\ Cafe,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+super_kilimanjaro_entertainment,Super Kilimanjaro Entertainment,Super\ Kilimanjaro\ Entertainment,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mr_quiles_mexican_food,Mr. Quiles Mexican Food,Mr\.\ Quiles\ Mexican\ Food,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+openmove,OpenMove,OpenMove,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+unseen_nairobi,Unseen Nairobi,Unseen\ Nairobi,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_black_penny,The Black Penny,The\ Black\ Penny,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+white_horse_spirits,White Horse Spirits,White\ Horse\ Spirits,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pret_a_manger,Pret A Manger,Pret\ A\ Manger,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+ground_bar,Ground Bar,Ground\ Bar,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+stage_door_deli,Stage Door Deli,Stage\ Door\ Deli,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+spothero,SpotHero,SpotHero,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+hmshost,HMSHost,HMSHost,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+divvy_bikes,Divvy Bikes,DIVVYBI\*SUBSCRIPTION,Transportation,Micromobility,subscription,service,discretionary,5250,Transport—Micromobility
+king_of_falafel,King of Falafel,King\ of\ Falafel,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+kfc,KFC,KFC,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+frontera_grill_ord,Frontera Grill (ORD),Frontera\ Grill\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+shoreditch,Shoreditch,Shoreditch,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+chicago_special_event_square,Chicago Special Event (Square),Chicago\ Special\ Event\ \(Square\),Entertainment & Events,Events,one_off,consumption,discretionary,5720,Entertainment—Events
+arby_s,Arby's,Arby's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+marks_and_spencer,Marks & Spencer,M&S SIMPLY FOOD|MARKS&SPENCER|MARKS%SPENCER|M&S SIMPLY FOOD - SSP|Marks and Spencer|Marks & Spencer,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+federales,Federales,Federales,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mochinut_chicago,Mochinut (Chicago),Mochinut\ \(Chicago\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+wolfgang_puck,Wolfgang Puck,Wolfgang\ Puck,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+tech_social,Tech Social,Tech\ Social,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+layla_s,Layla's,Layla's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+gnocchi_on_9th,Gnocchi on 9th,Gnocchi\ on\ 9th,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+lange_s_liquors,Lange's Liquors,Lange's\ Liquors,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+easyjet,easyJet,easyJet,Travel,Flights,one_off,consumption,discretionary,5310,Travel—Flights
+bao_soho,BAO Soho,BAO\ Soho,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nathan_s,Nathan's,Nathan's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+dines_brockwell,Dines (Brockwell),Dines\ \(Brockwell\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+hattie_b_s,Hattie B's,Hattie\ B's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+hana_group,Hana Group,Hana\ Group,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+hill_country,Hill Country,Hill\ Country,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+bbandk_limited,BB&K Limited,BB\&K\ Limited|BB\&amp;K\ Limited,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nuts_on_clark,Nuts on Clark,Nuts\ on\ Clark,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+twitter_paid,Twitter (Paid),Twitter\ \(Paid\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+dunkin,Dunkin',Dunkin',Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+urban_pine_eatery,Urban Pine Eatery,Urban\ Pine\ Eatery,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+morpheus_ventures,Morpheus Ventures,Morpheus\ Ventures,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+circle_off_licence,Circle Off Licence,Circle\ Off\ Licence,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+two_grapes,Two Grapes,Two\ Grapes,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+send_coffee,Send Coffee,Send\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+old_coffee_house,Old Coffee House,Old\ Coffee\ House,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+the_jackalope,The Jackalope,The\ Jackalope,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+dylan_murphy_s,Dylan Murphy's,Dylan\ Murphy's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+benita_bakery,Benita Bakery,Benita\ Bakery,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+sock_city,Sock City,Sock\ City,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+marks_and_spencer,Marks and Spencer,M&S SIMPLY FOOD|MARKS&SPENCER|MARKS%SPENCER|M&S SIMPLY FOOD - SSP|Marks and Spencer|Marks & Spencer,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+the_souvlaki_greek_grill,The Souvlaki Greek Grill,The\ Souvlaki\ Greek\ Grill,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+mobifix_gadgets,Mobifix Gadgets,Mobifix\ Gadgets,Shopping,Electronics,one_off,capital,discretionary,5420,Shopping—Electronics
+picnic_square,Picnic (Square),Picnic\ \(Square\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+boots,Boots,Boots,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+smith_s_marketplace,Smith's Marketplace,Smith's\ Marketplace,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+august_sun_investments,August Sun Investments,August\ Sun\ Investments,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+walgreens,Walgreens,Walgreens,Health & Wellness,Pharmacy/OTC,one_off,service,mandatory,5530,Health—Pharmacy/OTC
+g_and_g_atlantic,G & G Atlantic,G\ \&\ G\ Atlantic|G\ \&amp;\ G\ Atlantic,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+levain_bakery,Levain Bakery,Levain\ Bakery,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+angel_vape,Angel Vape,Angel\ Vape,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+c_est_la_vie_cafe,C'est La Vie Cafe,C'est\ La\ Vie\ Cafe,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+vinegar_yard,Vinegar Yard,Vinegar\ Yard,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+kebab_empire,Kebab Empire,Kebab\ Empire,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+pdl_coffee_co,PDL Coffee Co.,PDL\ Coffee\ Co\.,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+canal_express,Canal Express,Canal\ Express,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+world_s_end_finsbury,World's End (Finsbury),World's\ End\ \(Finsbury\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+smithfield_hall,Smithfield Hall,Smithfield\ Hall,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+exxon,Exxon,^EXXON ,Transportation,Fuel,one_off,service,mandatory,5240,Transport—Fuel
+caff_nero,CaffÃ¨ Nero,CAFFE NERO|Caff.? Nero,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+red_rock_brewing,Red Rock Brewing,Red\ Rock\ Brewing,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+jack_taxi,Jack Taxi,Jack\ Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,5210,Transport—Rideshare/Taxi
+coffee_garden,Coffee Garden,Coffee\ Garden,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+9th_sky_high,9th Sky High,9th\ Sky\ High,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cafe_tola,Cafe Tola,Cafe\ Tola,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+11_plc_hospitality,11 Plc Hospitality,11\ Plc\ Hospitality,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+lincoln_park_zoo_concessions,Lincoln Park Zoo (Concessions),Lincoln\ Park\ Zoo\ \(Concessions\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+stickk,stickK,stickK,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+luma_ai,Luma AI,Luma\ AI,Subscriptions & Software,AI Tools,subscription,service,discretionary,5630,Subs—AI Tools
+ssp_nederland,SSP Nederland,SSP\ Nederland,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+4b_adekunle,4B Adekunle,4B\ Adekunle,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_salisbury,The Salisbury,The\ Salisbury,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_porcupine,The Porcupine,The\ Porcupine,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+udderlicious_sumup,Udderlicious (SumUp),Udderlicious\ \(SumUp\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+trg_holdings,TRG Holdings,TRG\ Holdings,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+camden_eye,Camden Eye,Camden\ Eye,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+crystal_edge_restaurant,Crystal Edge Restaurant,Crystal\ Edge\ Restaurant,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+harvard_business_review,Harvard Business Review,Harvard\ Business\ Review,Subscriptions & Software,News & Publications,subscription,service,discretionary,5650,Subs—News & Publications
+anglo_african_property_holdings,Anglo African Property Holdings,Anglo\ African\ Property\ Holdings,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+tunde_otukoya_sumup,Tunde Otukoya (SumUp),Tunde\ Otukoya\ \(SumUp\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+stagecoach_citylink,Stagecoach / Citylink,Stagecoach\ /\ Citylink,Transportation,Public Transit,one_off,service,mandatory,5220,Transport—Transit
+parking_meter,Parking Meter,Parking\ Meter,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+rifugio_nuvolau,Rifugio Nuvolau,Rifugio\ Nuvolau,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+waterloo_tap,Waterloo Tap,Waterloo\ Tap,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+the_case_centre,The Case Centre,The\ Case\ Centre,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+nigerian_conservation_foundation,Nigerian Conservation Foundation,Nigerian\ Conservation\ Foundation,Gifts & Donations,Donations,one_off,service,discretionary,6020,Gifts—Donations
+air_margaritaville,Air Margaritaville,Air\ Margaritaville,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+camden_road_arms,Camden Road Arms,Camden\ Road\ Arms,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+oseyo,Oseyo,Oseyo,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+cafe_blue,Cafe Blue,Cafe\ Blue,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+tavily,Tavily,Tavily,Subscriptions & Software,AI Tools,subscription,service,discretionary,5630,Subs—AI Tools
+fitzbillies,Fitzbillies,Fitzbillies,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+east_village_pizza,East Village Pizza,East\ Village\ Pizza,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+things_remembered_ng,Things Remembered (NG),Things\ Remembered\ \(NG\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+auntie_anne_s,Auntie Anne's,Auntie\ Anne's,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+co_op,Co-op,Co\-op,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+foxtrot_market,Foxtrot Market,Foxtrot\ Market,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+hasib_coffee,Hasib Coffee,Hasib\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+primark,Primark,Primark,Shopping,Apparel,one_off,capital,discretionary,5410,Shopping—Apparel
+the_fig_tree_chicago,The Fig Tree (Chicago),The\ Fig\ Tree\ \(Chicago\),Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+ee,EE,EE,Housing,Telecom/Internet,subscription,service,mandatory,5020,Housing—Telecom/Internet
+ground_central_coffee,Ground Central Coffee,Ground\ Central\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+o_hare_parking,O'Hare Parking,O'Hare\ Parking,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+roros_co_limited,Roros Co Limited,Roros\ Co\ Limited,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+fedex,FedEx,^FEDEX,Personal Services,Shipping & Post,one_off,service,discretionary,6130,Services—Shipping & Post
+elevenlabs,ElevenLabs,ElevenLabs,Subscriptions & Software,AI Tools,subscription,service,discretionary,5630,Subs—AI Tools
+smoke_post,Smoke Post,Smoke\ Post,Personal Services,Shipping & Post,one_off,service,discretionary,6130,Services—Shipping & Post
+the_abbey_resort,The Abbey Resort,The\ Abbey\ Resort,Travel,Lodging,one_off,consumption,discretionary,5320,Travel—Lodging
+nashrin_matin,Nashrin Matin,Nashrin\ Matin,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+bar_partners_inc,Bar Partners Inc,Bar\ Partners\ Inc,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+uchicago_student_centers_pub,UChicago Student Centers Pub,UChicago\ Student\ Centers\ Pub,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+the_gallivan_center,The Gallivan Center,The\ Gallivan\ Center,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+grove_ord,Grove (ORD),Grove\ \(ORD\),Travel,Airport & In-Flight,one_off,consumption,discretionary,5350,Travel—Airport & In-Flight
+la_colombe,La Colombe,La\ Colombe,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+slc_parking,SLC Parking,SLC\ Parking,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+original_roma_pizza,Original Roma Pizza,Original\ Roma\ Pizza,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+the_drake_restaurant,The Drake Restaurant,The\ Drake\ Restaurant,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+simply_fresh,Simply Fresh,Simply\ Fresh,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+nohea_cafe,Nohea Cafe,Nohea\ Cafe,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+london_eastcheap_street,London Eastcheap Street,London\ Eastcheap\ Street,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+bottega_prosecco_bar,Bottega Prosecco Bar,Bottega\ Prosecco\ Bar,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,5730,Entertainment—Bars & Nightlife
+mattheessens,Mattheessens,Mattheessens,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+wired_co,Wired Co.,Wired\ Co\.,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+mariano_s,Mariano's,Mariano's,Food & Groceries,Groceries,one_off,consumption,mandatory,5110,Food—Groceries
+peet_s_coffee,Peet's Coffee,Peet's\ Coffee,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,5130,Food—Coffee & Quick Serve
+lot_d_parking,Lot D Parking,Lot\ D\ Parking,Transportation,Parking & Tolls,one_off,service,mandatory,5230,Transport—Parking & Tolls
+uber_one,Uber One,UBER\s+\*ONE,Subscriptions & Software,Memberships,subscription,service,discretionary,5660,Subs—Memberships
+city_of_flagstaff,City of Flagstaff,City\ of\ Flagstaff,Government & Financial,Taxes & Permits,one_off,service,mandatory,5910,Gov/Fin—Taxes & Permits
+mail_boxes_etc_highbury_and_islington,Mail Boxes Etc. (Highbury & Islington),Mail\ Boxes\ Etc\.\ \(Highbury\ \&\ Islington\)|Mail\ Boxes\ Etc\.\ \(Highbury\ \&amp;\ Islington\),Personal Services,Shipping & Post,one_off,service,discretionary,6130,Services—Shipping & Post
+artcaffe,Artcaffe,Artcaffe,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+tip_jar,Tip Jar,Tip\ Jar,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+digitalocean,DigitalOcean,DIGITALOCEAN\.COM,Subscriptions & Software,Cloud/Infra,subscription,service,discretionary,5610,Subs—Cloud/Infra
+illinois_tollway,Illinois Tollway,IL TOLLWAY,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
+parkwhiz,ParkWhiz,ParkWhiz,Food & Groceries,Restaurants,one_off,consumption,discretionary,5120,Food—Restaurants
