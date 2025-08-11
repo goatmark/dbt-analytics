@@ -8,6 +8,8 @@ model-paths: ["models"]
 target-path: "target"
 clean-targets: ["target"]
 
+seed-paths: ["seeds"]
+
 models:
   my_project:
     +materialized: table
