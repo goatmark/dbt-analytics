@@ -33,7 +33,7 @@ norm as (
       -- clean HTML/apostrophes + collapse whitespace
       trim(
         regexp_replace(
-          replace(replace(replace(b.description, '&amp;', '&'), '’', ''''), '`', ''''),
+          replace(replace(replace(b.description, '&amp;', '&'), '’', ''''), '', ''''),
           '\s+',
           ' ',
           'g'
@@ -104,9 +104,9 @@ norm as (
       )),
       '\s+', '',
       'g'
-    ) as desc_alpha_noagg_nospace,
+    )                                                                as desc_alpha_noagg_nospace,
 
-    r.desc_base as desc_norm
+    r.desc_base                                                      as desc_norm
   from raw r
 ),
 
