@@ -134,6 +134,7 @@ select
     , coalesce(ae.billing_model, 'Unknown') billing_model
     , coalesce(ae.spend_nature, 'Unknown') spend_nature
     , coalesce(ae.discretion, 'Unknown') discretion
+    , coalesce(ae.account_id, 'Unknown') account_id
     , coalesce(ae.gl_code, null) gl_code
     , coalesce(ae.account_name, 'Unknown') account_name
 from

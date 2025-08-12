@@ -8,6 +8,7 @@ select
     , ct.discretion
     , ct.gl_code
     , ct.account_name
+    , ct.account_id
     , sum(amount) total_spend
 from
     {{ (ref('classified_card_transactions'))}} as ct
@@ -23,6 +24,7 @@ group by
     , 7
     , 8
     , 9
+    , 10
 order by
     1 desc
     , total_spend asc
