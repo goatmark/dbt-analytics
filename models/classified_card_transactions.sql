@@ -206,7 +206,7 @@ map_one as (
       row_number() over (
         partition by mam.merchant_key
         order by
-          coalesce(mam.is_default, true) desc,
+          coalesce(mam.is_default, 'TRUE') desc,
           mam.effective_from desc nulls last,
           mam.account_id desc
       ) as rn
