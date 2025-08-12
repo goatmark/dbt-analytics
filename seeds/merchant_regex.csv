@@ -660,3 +660,20 @@ rx_20250811_170,mariano_s,^MARIANOS\s*#?\d+\b,199,,,
 rx_20250811_171,lot_d_parking,^LOT [A-Z]\b.*(?:PAY ON FOOT|EPS),198,,,
 rx_20250811_172,palm_restaurant_jfk,^(?:JFK )?PALM REST,199,,,
 rx_20250811_173,the_king_s_head,^KING HEAD\b,199,,,
+rx_20250811_162,british_airways,^BRITISH A\s+\d+,210,,,
+rx_20250811_163,ova,^NATERA\b,210,,,"map NATERA -> OVA"
+rx_20250811_164,binny_s,^BINNYS (?:EXPRESS|BEVERAGE)\b,205,,,
+rx_20250811_165,carrefour,^MAF\s+\d{4}\s+TILL\s+\d+\b,205,,,
+rx_20250811_166,grand_canyon_maswik,^MASWIK (?:CAFE(?:/PIZZA)?|PIZZA) ?PUB\b,205,,,
+rx_20250811_167,eventbrite,^EB\b,205,,,
+rx_20250811_168,wasatch_brew_pub,^WASATCH BREW ?PUB\b,199,,,
+rx_20250811_169,palm_restaurant_jfk,^(?:JFK )?PALM REST,199,,,
+rx_20250811_170,the_king_s_head,^KING HEAD\b,199,,,
+rx_20250811_171,ventra,^METRA MILLENNIUM STATION\b,199,,,
+rx_20250811_172,mariano_s,^MARIANOS\s*#?\d+\b,199,,,
+rx_20250811_173,lot_d_parking,^LOT [A-Z]\b.*(?:EPS|PAY ON FOOT),199,,,
+rx_20250811_174,liberty_london,^LIBERTY(?! MUTUAL)\b,199,,,"wins over generic LIBERTY collisions"
+rx_20250811_175,illinois_secretary_of_state,^ILSOS .*CENTRAL DRIV,199,,,
+rx_20250811_176,gail_s_islington,^GAILS ISLINGTON\b,199,,,
+rx_20250811_177,liquorama,^LIQOURAMA\b,199,,,"common misspelling"
+rx_20250811_178,british_airways,^BA INFLIGHT\b,204,,,"keep here to ensure priority (dup-safe)"
