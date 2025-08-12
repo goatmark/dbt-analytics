@@ -1,0 +1,45 @@
+account_id,gl_code,account_name,category,subcategory,billing_model,spend_nature,discretion,is_mandatory
+acct_e61560f024,5710,Entertainment—Attractions,Entertainment & Events,Attractions,one_off,consumption,discretionary,False
+acct_252a9dfee6,5730,Entertainment—Bars & Nightlife,Entertainment & Events,Bars & Nightlife,one_off,consumption,discretionary,False
+acct_574bb68ff7,5720,Entertainment—Events,Entertainment & Events,Events,one_off,consumption,discretionary,False
+acct_3bd559647b,5130,Food—Coffee & Quick Serve,Food & Groceries,Coffee & Quick Serve,one_off,consumption,discretionary,False
+acct_74be5aaa27,5125,Food—Delivery Platforms,Food & Groceries,Delivery Platforms,one_off,consumption,discretionary,False
+acct_a0f371c808,5110,Food—Groceries,Food & Groceries,Groceries,one_off,consumption,mandatory,True
+acct_381b1169a4,5120,Food—Restaurants,Food & Groceries,Restaurants,one_off,consumption,discretionary,False
+acct_c98d7e5aac,6020,Gifts—Donations,Gifts & Donations,Donations,one_off,service,discretionary,False
+acct_a08245e3ee,6010,Gifts—Gifts,Gifts & Donations,Gifts,one_off,service,discretionary,False
+acct_6f74090254,5920,Gov/Fin—Fees & Interest,Government & Financial,Fees & Interest,one_off,service,mandatory,True
+acct_9adf117b0b,5910,Gov/Fin—Taxes & Permits,Government & Financial,Taxes & Permits,one_off,service,mandatory,True
+acct_3e9d1f4b2a,5520,Health—Dental,Health & Wellness,Dental,one_off,service,mandatory,True
+acct_93cc197271,5550,Health—Fertility,Health & Wellness,Fertility,one_off,service,discretionary,False
+acct_36ad151cfb,5510,Health—Medical Services,Health & Wellness,Medical Services,one_off,service,mandatory,True
+acct_2382d702bc,5530,Health—Pharmacy/OTC,Health & Wellness,Pharmacy/OTC,one_off,service,mandatory,True
+acct_633cb0abc7,5055,Housing—Furniture Rental,Housing,Furniture Rental,subscription,service,discretionary,False
+acct_329a7781bd,5010,Housing—Rent,Housing,Rent,subscription,service,mandatory,True
+acct_b89f7543f6,5020,Housing—Telecom/Internet,Housing,Telecom/Internet,subscription,service,mandatory,True
+acct_7d15f960d5,5030,Housing—Utilities,Housing,Utilities,subscription,service,mandatory,True
+acct_fc40ca2b29,6120,Services—Laundry/Cleaning,Personal Services,Laundry/Cleaning,one_off,service,discretionary,False
+acct_f183bb01ee,6110,Services—Personal Care,Personal Services,Personal Care,one_off,service,discretionary,False
+acct_30ce44b684,6140,Services—Printing/Photo,Personal Services,Printing/Photo,one_off,service,discretionary,False
+acct_2e67d1504b,6130,Services—Shipping & Post,Personal Services,Shipping & Post,one_off,service,discretionary,False
+acct_d5812e3876,5410,Shopping—Apparel,Shopping,Apparel,one_off,capital,discretionary,False
+acct_256b235086,5420,Shopping—Electronics,Shopping,Electronics,one_off,capital,discretionary,False
+acct_5ba3d639db,5430,Shopping—Home Goods,Shopping,Home Goods,one_off,capital,discretionary,False
+acct_5fac83b5f6,5630,Subs—AI Tools,Subscriptions & Software,AI Tools,subscription,service,discretionary,False
+acct_197774d3f8,5610,Subs—Cloud/Infra,Subscriptions & Software,Cloud/Infra,mixed,service,discretionary,False
+acct_00cb1c8923,5610,Subs—Cloud/Infra,Subscriptions & Software,Cloud/Infra,subscription,service,discretionary,False
+acct_0aedc981ef,5660,Subs—Memberships,Subscriptions & Software,Memberships,subscription,service,discretionary,False
+acct_85647ee8cc,5650,Subs—News & Publications,Subscriptions & Software,News & Publications,subscription,service,discretionary,False
+acct_c3a4c4211d,5620,Subs—Productivity/Tools,Subscriptions & Software,Productivity/Tools,subscription,service,discretionary,False
+acct_1d4e8d81e0,5640,Subs—Streaming/Media,Subscriptions & Software,Streaming/Media,subscription,service,discretionary,False
+acct_a62d0ab8f6,5260,Transport—Car Rental,Transportation,Car Rental,one_off,service,discretionary,False
+acct_223b76f31e,5270,Transport—Equipment (CapEx),Transportation,Equipment (CapEx),one_off,capital,discretionary,False
+acct_3b29f8c5aa,5240,Transport—Fuel,Transportation,Fuel,one_off,service,mandatory,True
+acct_6299339e13,5250,Transport—Micromobility,Transportation,Micromobility,one_off,service,discretionary,False
+acct_6a946a01c4,5250,Transport—Micromobility,Transportation,Micromobility,subscription,service,discretionary,False
+acct_c30ad64cd5,5230,Transport—Parking & Tolls,Transportation,Parking & Tolls,one_off,service,mandatory,True
+acct_d53dc228ca,5220,Transport—Transit,Transportation,Public Transit,one_off,service,mandatory,True
+acct_bbf64ddba4,5210,Transport—Rideshare/Taxi,Transportation,Rideshare/Taxi,one_off,service,discretionary,False
+acct_70da8b7940,5350,Travel—Airport & In-Flight,Travel,Airport & In-Flight,one_off,consumption,discretionary,False
+acct_1d9ae90683,5310,Travel—Flights,Travel,Flights,one_off,consumption,discretionary,False
+acct_baba137819,5320,Travel—Lodging,Travel,Lodging,one_off,consumption,discretionary,False
