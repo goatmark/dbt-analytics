@@ -121,6 +121,7 @@ circle_off_licence,Circle Off Licence
 city_of_austin_parks_and_rec,City of Austin Parks & Rec
 city_of_chicago,City of Chicago
 city_of_flagstaff,City of Flagstaff
+city_winery,City Winery
 city_winery_chicag,City Winery Chicag
 cityfront_garage,Cityfront Garage
 cmt_taxi,CMT Taxi
@@ -165,6 +166,7 @@ eko_hotels,Eko Hotels
 electric_hotel,Electric Hotel
 elephant_and_castle_wabash,Elephant & Castle (Wabash)
 elevenlabs,ElevenLabs
+emerald_loop,Emerald Loop
 emerald_loop_bar_g,Emerald Loop Bar G
 emirates,Emirates
 emporio_del_grano,Emporio del Grano
@@ -190,12 +192,14 @@ forever_sales_enterprise,Forever Sales Enterprise
 forno_rosso_pizzeria,Forno Rosso Pizzeria
 four_seasons_adorn_bar,Four Seasons Adorn Bar
 foxtrot_market,Foxtrot Market
+foxy_johns,Foxy Johns Bar & Kitchen
 foxy_johns_bar_kit,Foxy Johns Bar Kit
 frontera_grill_ord,Frontera Grill (ORD)
 g_and_g_atlantic,G & G Atlantic
 gaijin,Gaijin
 gail_s_islington,GAIL's Islington
 galit,Galit
+gangnam_market,Gangnam Market
 gangnam_market_em,Gangnam Market Em
 garfield_super_save,Garfield Super Save
 gibsons_hugo_s,Gibsons Hugo's
@@ -226,18 +230,21 @@ grove_ord,Grove (ORD)
 guggenheim_museum,Guggenheim Museum
 hana_group,Hana Group
 harry_carays_navy,Harry Carays Navy
+harry_carays_navy_pier,Harry Caray's – Navy Pier
 harvard_business_review,Harvard Business Review
 hasib_coffee,Hasib Coffee
 hattie_b_s,Hattie B's
 hattie_b_s_midtown,Hattie B S Midtown
 havana_restaurant,Havana Restaurant
 haymarket_pub_and_br,Haymarket Pub and Br
+haymarket_pub_brew,Haymarket Pub & Brew
 heathrow_express,Heathrow Express
 heathrow_t3_budweiser,Heathrow T3 Budweiser
 helix_pay,Helix Pay
 highjump_chicago,HighJump Chicago
 hill_country,Hill Country
 hmshost,HMSHost
+hoexters,Hoexters (New)
 hoexters_new,Hoexters New
 hogsalt_bavettes,Hogsalt Bavettes
 hogsalt_small_chev,Hogsalt Small Chev
@@ -268,6 +275,7 @@ ivy_granary_square,Ivy Granary Square
 jack_taxi,Jack Taxi
 james_elliott_butchers,James Elliott Butchers
 jeni_s_splendid_ice,Jeni S Splendid Ice
+jenis_splendid_ice_cream,Jeni's Splendid Ice Cream
 jfk_beacon_bar,JFK Beacon Bar
 jin_bo_law,Jin Bo Law
 john_lewis,John Lewis
@@ -296,6 +304,7 @@ le_colonial,Le Colonial
 le_grand_comptoir_jfk,Le Grand Comptoir (JFK)
 le_meridien_mina_seyahi,Le Meridien Mina Seyahi
 lefty_s_brick_bar,Lefty S Brick Bar
+leftys_brick_bar,Lefty's Brick Bar
 lemonade,Lemonade
 levain_bakery,Levain Bakery
 levy_united_center,Levy (United Center)
@@ -311,10 +320,12 @@ liquor_bar_ord,Liquor Bar (ORD)
 liquorama,Liquorama
 live_lean_rx,Live Lean RX
 lizzie_mcneill_s,Lizzie Mcneill S
+lizzie_mcneills,Lizzie McNeill's
 lock_stock_and_barrel,"Lock, Stock & Barrel"
 logs_and_embers,Logs and Embers
 london_eastcheap_street,London Eastcheap Street
 london_taxi,London Taxi
+los_tacos_no_1,Los Tacos No. 1
 los_tacos_no_1_che,Los Tacos No 1 Che
 los_tacos_no_1_pe,Los Tacos No 1 Pe
 lot_d_parking,Lot D Parking
@@ -336,6 +347,7 @@ market_street_grill,Market Street Grill
 marks_and_spencer,Marks & Spencer
 mart_parc_parking,Mart Parc Parking
 martin_s_bar_b_que_joint,Martin's Bar-B-Que Joint
+matchacita,Matchacita (West Loop)
 matchacita_west_loop,Matchacita West Loop
 mattheessens,Mattheessens
 mattori_s_open_market,Mattori's Open Market
@@ -358,6 +370,7 @@ mobifix_gadgets,Mobifix Gadgets
 mochinut_chicago,Mochinut (Chicago)
 modernhaus_soho,Modernhaus Soho
 mokyo,Mokyo
+moonshine_patio,Moonshine Patio Bar
 moonshine_patio_bar,Moonshine Patio Bar
 morpheus_ventures,Morpheus Ventures
 mr_quiles_mexican_food,Mr. Quiles Mexican Food
@@ -413,6 +426,7 @@ petes_dueling_piano,Petes Dueling Piano
 pga,PGA
 phebe_s_tavern,Phebe's Tavern
 philippe_conticini,Philippe Conticini
+philly_special,Philly Special
 philly_special_afh,Philly Special Afh
 phoenicia_mediterranean,Phoenicia Mediterranean
 pianos,Pianos
@@ -432,8 +446,10 @@ publican_ord,Publican (ORD)
 publik_coffee_avenue,Publik Coffee Avenue
 publik_coffee_west_t,Publik Coffee West T
 punch_house_tack_roo,Punch House Tack Roo
+punch_house_tack_room,Punch House Tack Room
 pure_dental_spa,Pure Dental Spa
 pylos,Pylos
+rabanitos,5 Rabanitos
 rawhide,Rawhide
 red_door_saloon,Red Door Saloon
 red_rock_brewing,Red Rock Brewing
@@ -459,6 +475,7 @@ seth_thai,Seth Thai
 shakespeare_s_head,Shakespeare's Head
 shoreditch,Shoreditch
 shotshak,Shotshak
+sifr,Sifr - 660 N Orleans
 sifr_660_n_orleans,Sifr 660 N Orleans
 simply_fresh,Simply Fresh
 skullfade_barbers,Skullfade Barbers
@@ -480,12 +497,14 @@ ssp_nederland,SSP Nederland
 ssp_uk,SSP UK
 stage_door_deli,Stage Door Deli
 stagecoach_citylink,Stagecoach / Citylink
+stans_donuts,Stan's Donuts
 stans_donuts_181,Stans Donuts 181
 starbucks,Starbucks
 steam,Steam
 stickk,stickK
 strawberry_hill,Strawberry Hill
 summit_retail,SUMMIT Retail
+sunny_bowls,Sunny Bowls
 sunny_bowls_merch,Sunny Bowls Merch
 super_kilimanjaro_entertainment,Super Kilimanjaro Entertainment
 susie_s_fine_baked_goods,Susie's Fine Baked Goods
@@ -493,6 +512,7 @@ sweetgreen,Sweetgreen
 table_donkey_and_st,Table Donkey and St
 tac_bar_jamaica,TAC Bar Jamaica
 tacombi_fulton_mar,Tacombi Fulton Mar
+tacombi_fulton_market,Tacombi - Fulton Market
 target,Target
 taverna_the_domain,Taverna - The Domain
 tavily,Tavily
@@ -524,6 +544,7 @@ the_hampton_social,The Hampton Social
 the_jackalope,The Jackalope
 the_kerryman_chicago,The Kerryman Chicago
 the_king_s_head,The King's Head
+the_mart_tots,The Mart Tots LLC
 the_mart_tots_llc_m,The Mart Tots Llc M
 the_monarch_new,The Monarch New
 the_palomar,The Palomar
@@ -538,6 +559,7 @@ time_out_market_chicago,Time Out Market Chicago
 tiny_tapp_and_cafe,Tiny Tapp & Cafe
 tip_jar,Tip Jar
 tm7_jonny_s_pizza,Tm7 Jonny S Pizza
+tm7_jonnys_pizza,TM7 – Jonny's Pizza
 toad_hall,Toad Hall
 total_energies,Total Energies
 totes_isotoner,Totes Isotoner
@@ -602,4 +624,5 @@ zaza_smoke_shop,ZaZa Smoke Shop
 zenbusiness,ZenBusiness
 zona_cocina,Zona Cocina
 zucker_s_bagels,Zucker S Bagels
+zuckers_bagels,Zucker's Bagels & Smoked Fish
 zuma,Zuma
