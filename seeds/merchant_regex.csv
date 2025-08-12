@@ -490,3 +490,80 @@ rx_e9c1e5764681,zaza_smoke_shop,ZaZa\ Smoke\ Shop,116,,,
 rx_525a48c355c5,zenbusiness,ZenBusiness,110,,,
 rx_127784d1d2d9,zona_cocina,Zona\ Cocina,111,,,
 rx_1d90966af850,zuma,Zuma,103,,,
+rx_20250811_001,whole_foods,\bWHOLEFDS\b,200,,,"WHOLEFDS WLP/LMR/FLG #xxxx"
+rx_20250811_002,whole_foods,WHOLEFDS .*#?[A-Z0-9]+,199,,,"more WHOLEFDS store #"
+rx_20250811_003,delta_air_lines,^DELTA AIR,200,,,"DELTA AIR 00… tickets"
+rx_20250811_004,american_airlines,^AMERICAN AIR(?: ?LINES)?\d*,205,,,"AMERICAN AIR0012… and AMERICAN AI …"
+rx_20250811_005,american_airlines,^AA\.COM,205,,,"AA.COM kiosk/online"
+rx_20250811_006,american_airlines,^AMERICANAIRLINES,205,,,"no-space variant"
+rx_20250811_007,american_airlines,^AA Kiosk,205,,,"AA Kiosk…"
+rx_20250811_008,kenya_airways,^KENYA AIR,200,,,
+rx_20250811_009,kenya_airways,^KQ CC,200,,,
+rx_20250811_010,british_airways,^B ?A INTERNET,205,,,"B A INTERNET…"
+rx_20250811_011,british_airways,^BRITISH A\b,204,,,"BRITISH A   125…"
+rx_20250811_012,british_airways,^BA INFLIGHT,204,,,
+rx_20250811_013,sainsbury_s,^SAINSBURYS( S/MKTS)?,198,,,
+rx_20250811_014,bloomingdale_s,^BLOOMINGDALES\s*\.COM,198,,,
+rx_20250811_015,uchicago_medicine,^MED\*UNIVERSITY OF CHICAGO,210,,,
+rx_20250811_016,booth_groups,^BOOTH (CAMPUS )?GROUPS,198,,,
+rx_20250811_017,smyth_the_loyalist,SMYTH( THE LOYALIST)?,198,,,"catches PY*/TOCK* Smyth"
+rx_20250811_018,smyth_the_loyalist,^TOCK AT\*SMYTH,199,,,
+rx_20250811_019,ballie_ballerson_shoreditch,BALLIEBALLERSON,198,,,"DMN/BALLIEBALLERSONSHO…"
+rx_20250811_020,flashdancers,^59 MURRAY ENTERPRISES,198,,,"parent co. for FlashDancers"
+rx_20250811_021,grand_canyon_maswik,^GR ?CNYN MASWIK,198,,,"deposit"
+rx_20250811_022,grand_canyon_maswik,^MASWIK (CAFE|PIZZA) PUB,198,,,
+rx_20250811_023,alamo_rent_a_car,Alamo[-\s]Rent[-\s]A[-\s]Car,198,,,
+rx_20250811_024,gibsons_hugo_s,GIBSONS HUGO'?S?,198,,,
+rx_20250811_025,shakespeare_s_head,^SHAKESPEARE'?S? HEAD,198,,,
+rx_20250811_026,highjump_chicago,^HIGHJUMPCHICAGO\.ORG,198,,,
+rx_20250811_027,aspen_place_flagstaff,ASPEN PLACE FLAG,198,,,
+rx_20250811_028,cmt_taxi,^(?:CMT (?:CHICAGO|UK).*)|(?:CMT .*TAXI),199,,,
+rx_20250811_029,ng_immigration_visa,^NGIMMIGRATIONVISA,198,,,
+rx_20250811_030,illinois_secretary_of_state,^ILSOS .*RENEW,199,,,
+rx_20250811_031,city_of_chicago,^CTY ?CHGO .*STICKER,199,,,"City Clerk stickers"
+rx_20250811_032,city_of_chicago,^CITY CHICAGO TICKET,199,,,
+rx_20250811_033,plp_events,^P ?L ?P EVENTS,198,,,
+rx_20250811_034,goose_island_ord,GOOSE ISLAND .*ORD,198,,,
+rx_20250811_035,taverna_the_domain,TAVERNA .*DOMAIN,198,,,
+rx_20250811_036,banger_s_austin,BANGERSAUSTIN\.CO\*,198,,,
+rx_20250811_037,abruzzo_ewr_c1,EWR C1 ABRUZZO,198,,,
+rx_20250811_038,delis_supermarket_and_coffee,Delis\W*Supermarket.*Coff,198,,,
+rx_20250811_039,vodafone_top_up,Vesta Vodafone TopUp,198,,,
+rx_20250811_040,tgi_friday_s,^TGI ?FRIDAY'?S?,198,,,
+rx_20250811_041,art_institute_of_chicago,^ART INST(?!ITUTE).*CHGO,198,,,"ART INST CHGO-ONLINE"
+rx_20250811_042,guggenheim_museum,GUGGENHEIM(\.ORG)?|^RA@GUGGENHEIM,198,,,
+rx_20250811_043,harvard_business_review,HARVARD BUS HBR\.ORG,198,,,
+rx_20250811_044,microsoft_store,Microsoft\*Store,198,,,
+rx_20250811_045,wifi_onboard,^WIFIONBOARD,198,,,
+rx_20250811_046,manchu_wok_ord,MANCHU WOK .*ORD,198,,,
+rx_20250811_047,hmshost,^HMS ?Host( International)?,198,,,
+rx_20250811_048,grove_ord,GROVE .*ORD,198,,,
+rx_20250811_049,london_eastcheap_street,LONDON EASTCHEAP ST\b,198,,,
+rx_20250811_050,mail_boxes_etc_highbury_and_islington,^MBE LONDON HIGHBURY,205,,,
+rx_20250811_051,le_grand_comptoir_jfk,LE ?GRAND COMPTOIR .*JFK|JFK .*LEGRAND COMPTOIR,198,,,
+rx_20250811_052,flatiron_coffee_jfk,JFK FLATIRONCOF,198,,,
+rx_20250811_053,hunt_and_fish_lga,HUNT (?:&|AND) FISH .*LGA,198,,,
+rx_20250811_054,publican_ord,PUBLICAN .*ORD,198,,,
+rx_20250811_055,whsmith_heathrow_t3,WH ?Smith Heathrow T3,198,,,
+rx_20250811_056,heathrow_t3_budweiser,BUDWEISER T3,198,,,
+rx_20250811_057,house_of_blues_chicago,^HOB CHICAGO,198,,,
+rx_20250811_058,mcgettigan_s,MCG?GETTIGAN'?S,198,,,
+rx_20250811_059,dunkin,^DUNKIN\b,198,,,
+rx_20250811_060,nigerian_conservation_foundation,NIGERIAN CONSERVATION FOU,198,,,
+rx_20250811_061,united_airlines,^UA INFLT,198,,,
+rx_20250811_062,bp,^BP#[A-Z0-9]+,198,,,"BP#XXX… variants"
+rx_20250811_063,terra_sol_hospitality,Terra\W*Sol\W*Hospitality,198,,,
+rx_20250811_064,angel_orient_zettle,^Zettle_?\*?Angel Orient,198,,,
+rx_20250811_065,zaro_s_bakery,ZARO'?S BAKERY,198,,,
+rx_20250811_066,levy_united_center,LEVY@|LEVY .*BLACKHAWKS,198,,,
+rx_20250811_067,mochinut_chicago,MOCHINUT.*CHICAGO,198,,,
+rx_20250811_068,king_of_falafel,King\ of\ Fala?fel,198,,,"typo tolerant"
+rx_20250811_069,the_king_s_head,^(?:THE )?KING'?S HEAD,198,,,
+rx_20250811_070,the_salisbury,^(?:THE )?SALISBURY\b,198,,,
+rx_20250811_071,the_bull,^(?:THE )?BULL\b,198,,,
+rx_20250811_072,the_shops_at_north_bridge_garage,NORTH BRIDGE .*GRA,198,,,"garage abbrev"
+rx_20250811_073,parkchicago,^PARKINGMETER\d+,198,,,"Meter vendor code"
+rx_20250811_074,linkedin_premium,^LinkedInPreA ,198,,,
+rx_20250811_075,angel_orient_zettle,Angel Orient \(Zettle\)|Zettle_?\*Angel Orient,199,,,"combine both"
+rx_20250811_076,udderdicious_sumup,SumUp\s*\*UDDERLICIOUS,198,,,"alt SumUp"
+rx_20250811_077,tunde_otukoya_sumup,SumUp\s*\*Tunde otukoya,198,,,
