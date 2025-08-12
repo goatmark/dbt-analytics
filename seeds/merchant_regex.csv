@@ -708,3 +708,5 @@ rx_20250811_227,ventra,^METRA MILLENNIUM STATION\y,199,,,"treat kiosk as transit
 rx_20250811_228,london_eastcheap_street,LONDON EASTCHEAP ST\y,199,,,
 rx_20250811_229,mariano_s,^MARIANOS\s*#?\d+\y,199,,,
 rx_20250811_230,lot_d_parking,^LOT [A-Z]\y.*(?:EPS|PAY ON FOOT),199,,,
+rx_20250811_231,dines_brockwell,^DINES\*.*B.?R.?C.?K.?W.?L,210,,,"handles truncated 'DINES* BRCKWL WHOLEF'"
+rx_20250811_232,grand_canyon_national_park,^GR(AND| ?)? CANYON NATIONAL P,210,,,"handles 'GRAND CANYON NATIONAL P' & 'GR CANYON NATIONAL P'"
