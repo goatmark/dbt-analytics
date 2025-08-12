@@ -33,7 +33,7 @@ norm as (
       -- clean HTML/apostrophes + collapse whitespace
       trim(
         regexp_replace(
-          replace(replace(replace(b.description, '&amp;', '&'), '’', ''''), '', ''''),
+          replace(replace(replace(b.description, '&amp;', '&'), '’', ''''), '`', ''''),
           '\s+',
           ' ',
           'g'
@@ -257,3 +257,21 @@ select
 from account_enriched ae
 where ae.type = 'Sale'
 order by ae.date desc, ae.amount asc
+
+select
+    description
+    , merchant_name
+    , sum(amount)
+from
+    {{ ref('classified_card_transactions')}} as ct
+where
+    1=1
+    and (
+        ct.merchant_name = 'Unknown'
+        or ct.merchant_name = 'Restaurants (misc)'
+    )
+group by
+    1
+    , 2
+order by
+    3 asc
