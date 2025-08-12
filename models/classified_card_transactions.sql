@@ -46,10 +46,10 @@ norm as (
     -- remove hyphens/slashes as an alternate
     regexp_replace(r.desc_base, '\s*[-/]\s*', ' ', 'g')              as desc_nohyphen,
     -- strip aggregator prefixes (Square/Stripe/Eventbrite/PayPal-ish)
-    regexp_replace(r.desc_base, '(?:SPO|SQ|EB|PY)\\s*\\*?\\s*', '', 'i') as desc_noagg,
+    regexp_replace(r.desc_base, '(?:SPO|SQ|EB|PY|TST)\\s*\\*?\\s*', '', 'i') as desc_noagg,
     -- combo: no agg + no hyphen
     regexp_replace(
-      regexp_replace(r.desc_base, '(?:SPO|SQ|EB|PY)\\s*\\*?\\s*', '', 'i'),
+      regexp_replace(r.desc_base, '(?:SPO|SQ|EB|PY|TST)\\s*\\*?\\s*', '', 'i'),
       '\s*[-/]\s*',
       ' ',
       'g'
