@@ -1,4 +1,3 @@
--- models/classified_card_transactions.sql
 -- END-STATE model: robust TST*/Square/Eventbrite/PayPal aggregator handling
 -- + automatic name fallback to merchants seed (no manual regex needed for every venue).
 
@@ -44,32 +43,70 @@ norm as (
   )
   select
     r.*,
-    -- 1) keep punctuation (default view)
-    r.desc_base                                   as desc_keep,
-    -- 2) remove hyphens/slashes
+
+    -- canonical forms
+    r.desc_base                                                      as desc_keep,
+
+    -- remove hyphens/slashes
     regexp_replace(r.desc_base, '\s*[-/]\s*', ' ', 'g')              as desc_nohyphen,
-    -- 3) strip aggregator prefixes (Square/Stripe/Eventbrite/PayPal/"TST*"), allow arbitrary punctuation after tag
-    regexp_replace(r.desc_base, '^(?:SPO|SQ|EB|PY|TST)\s*[^A-Za-z0-9]?\s*', '', 'i') as desc_noagg,
-    -- 4) combo: no agg + no hyphen
+
+    -- strip aggregator prefixes (Square/Stripe/Eventbrite/PayPal/TST/SumUp/Zettle),
+    -- allow arbitrary punctuation after tag
     regexp_replace(
-      regexp_replace(r.desc_base, '^(?:SPO|SQ|EB|PY|TST)\s*[^A-Za-z0-9]?\s*', '', 'i'),
+      r.desc_base,
+      '^(?:SPO|SQ|EB|PY|TST|SUMUP|ZETTLE)\s*[^A-Za-z0-9]?\s*',
+      '',
+      'i'
+    )                                                                as desc_noagg,
+
+    -- combo: no agg + no hyphen
+    regexp_replace(
+      regexp_replace(
+        r.desc_base,
+        '^(?:SPO|SQ|EB|PY|TST|SUMUP|ZETTLE)\s*[^A-Za-z0-9]?\s*',
+        '',
+        'i'
+      ),
       '\s*[-/]\s*',
       ' ',
       'g'
-    ) as desc_noagg_nohyphen,
-    -- 5) strip a trailing ", ST"
+    )                                                                as desc_noagg_nohyphen,
+
+    -- strip a trailing ", ST"
     regexp_replace(r.desc_base, '\s*,\s*[A-Z]{2}\s*$', '', 'i')      as desc_tail,
-    -- 6) airline alias expansion (kept from prior logic)
+
+    -- airline/brand alias expansion (kept + extended)
     case
-      when r.desc_base ~* '^BRITISH A\b'   then regexp_replace(r.desc_base, '^BRITISH A\b',   'BRITISH AIRWAYS ', 1, 1, 'i')
-      when r.desc_base ~* '^AMERICAN AI\b' then regexp_replace(r.desc_base, '^AMERICAN AI\b', 'AMERICAN AIRLINES ', 1, 1, 'i')
+      when r.desc_base ~* '^BRITISH A\b'    then regexp_replace(r.desc_base, '^BRITISH A\b',    'BRITISH AIRWAYS ', 1, 1, 'i')
+      when r.desc_base ~* '^AMERICAN AI\b'  then regexp_replace(r.desc_base, '^AMERICAN AI\b',  'AMERICAN AIRLINES ', 1, 1, 'i')
+      when r.desc_base ~* '^UA\s*INFLT\b'   then regexp_replace(r.desc_base, '^UA\s*INFLT\b',   'UNITED AIRLINES INFLIGHT ', 1, 1, 'i')
       else null
-    end                                                             as desc_alias,
-    -- 7) alpha/num only, for fuzzy-ish contains checks
-    lower(regexp_replace(r.desc_base, '[^A-Za-z0-9]+', ' ', 'g'))        as desc_alpha,
-    lower(regexp_replace(regexp_replace(r.desc_base, '^(?:SPO|SQ|EB|PY|TST)\s*[^A-Za-z0-9]?\s*', '', 'i'),
-                         '[^A-Za-z0-9]+', ' ', 'g'))                      as desc_alpha_noagg,
-    r.desc_base                                                     as desc_norm
+    end                                                              as desc_alias,
+
+    -- alpha/num only, for fuzzy-ish contains checks
+    lower(regexp_replace(r.desc_base, '[^A-Za-z0-9]+', ' ', 'g'))    as desc_alpha,
+    lower(
+      regexp_replace(
+        regexp_replace(r.desc_base, '^(?:SPO|SQ|EB|PY|TST|SUMUP|ZETTLE)\s*[^A-Za-z0-9]?\s*', '', 'i'),
+        '[^A-Za-z0-9]+', ' ', 'g'
+      )
+    )                                                                as desc_alpha_noagg,
+
+    -- no-space variants to catch "LAYLA S" vs "LAYLAS"
+    regexp_replace(lower(regexp_replace(r.desc_base, '[^A-Za-z0-9]+', ' ', 'g')), '\s+', '', 'g')
+                                                                     as desc_alphanospace,
+    regexp_replace(
+      lower(
+        regexp_replace(
+          regexp_replace(r.desc_base, '^(?:SPO|SQ|EB|PY|TST|SUMUP|ZETTLE)\s*[^A-Za-z0-9]?\s*', '', 'i'
+        ),
+        '[^A-Za-z0-9]+', ' ', 'g'
+      )),
+      '\s+', '',
+      'g'
+    ) as desc_alpha_noagg_nospace,
+
+    r.desc_base as desc_norm
   from raw r
 ),
 
@@ -106,7 +143,7 @@ match as (
 ),
 
 -- name-fallback: if regex failed or landed on Restaurants (misc), match by merchant name contained in the normalized description.
--- We search across the merchants seed, pick the *longest* name hit to avoid generic "Bar", "Cafe", etc.
+-- Improvements: compare both full and "base" names (parentheticals removed), and also no-space variants to catch e.g., "LAYLA S" vs "LAYLAS".
 name_fallback as (
   select
     m.*,
@@ -117,16 +154,26 @@ name_fallback as (
     from {{ ref('merchants') }} mm
     cross join lateral (
       select
-        lower(regexp_replace(mm.merchant_name, '[^A-Za-z0-9]+', ' ', 'g')) as name_alpha,
+        -- full name
+        lower(regexp_replace(mm.merchant_name, '[^A-Za-z0-9]+', ' ', 'g'))                                 as name_alpha,
+        -- base name: strip any parenthetical suffix like "(Square)", "(SumUp)", "(ORD)", "(JFK)"
+        lower(regexp_replace(regexp_replace(mm.merchant_name, '\s*\([^)]*\)\s*', ' ', 'g'), '[^A-Za-z0-9]+', ' ', 'g')) as name_base_alpha,
+        -- no-space variants
+        regexp_replace(lower(regexp_replace(mm.merchant_name, '[^A-Za-z0-9]+', ' ', 'g')), '\s+', '', 'g')  as name_alpha_nospace,
+        regexp_replace(lower(regexp_replace(regexp_replace(mm.merchant_name, '\s*\([^)]*\)\s*', ' ', 'g'), '[^A-Za-z0-9]+', ' ', 'g')), '\s+', '', 'g') as name_base_alpha_nospace,
         length(mm.merchant_name) as name_len
     ) t
     where
-      -- Only try when the regex didn't help, or it hit the misc bucket
       (m.rx_merchant_key is null or m.rx_merchant_key = 'restaurants_misc')
-      and position(t.name_alpha in m.desc_alpha_noagg) > 0
+      and (
+        position(t.name_alpha                 in m.desc_alpha_noagg)          > 0
+        or position(t.name_base_alpha         in m.desc_alpha_noagg)          > 0
+        or position(t.name_alpha_nospace      in m.desc_alpha_noagg_nospace)  > 0
+        or position(t.name_base_alpha_nospace in m.desc_alpha_noagg_nospace)  > 0
+      )
       and t.name_len >= 4
       -- weak stoplist for hyper-generic names
-      and t.name_alpha not in ('bar','cafe','market','grill','store','shop')
+      and t.name_base_alpha not in ('bar','cafe','market','grill','store','shop')
     order by t.name_len desc -- prefer the longest specific name
     limit 1
   ) mf on true
