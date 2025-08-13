@@ -15,14 +15,18 @@ with base as (
     case
       when ct.type is not null then type
       when ct.card_last4 not in (3221,4245,5083,6823) then 'Payment'
-      when ct.description ilike '%Online Transfer%'   then 'Payment'
-      when ct.description ilike '%Edward Jones%'      then 'Payment'
-      when ct.description ilike '%JPMorgan Chase%'    then 'Payment'
-      when ct.description ilike '%Fedwire%'           then 'Payment'
-      when ct.description ilike '%Automatic Payment%' then 'Payment'
+      when ct.description ilike '%Online Payment%'
+        or ct.description ilike '%Online Transfer%'
+        or ct.description ilike '%Edward Jones%'
+        or ct.description ilike '%JPMorgan Chase%'
+        or ct.description ilike '%Fedwire%'
+        or ct.description ilike '%Automatic Payment%' 
+        then 'Payment'
       else 'Sale'
     end
   ) = 'Sale'
+  order by
+    ct.date desc nulls last
 ),
 
 -- normalize description for matching
@@ -255,5 +259,4 @@ select
   , coalesce(ae.gl_code, null)                 as gl_code
   , coalesce(ae.account_name, 'Unknown')       as account_name
 from account_enriched ae
-where ae.type = 'Sale'
 order by ae.date desc, ae.amount asc
