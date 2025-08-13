@@ -790,3 +790,4 @@ rx_tst_0071,the_mart_tots,(?i)mart\s*tots,205,,,
 rx_fix_1001,intelligentsia_coffee,(?i)intelligentsia,199,,,
 rx_fix_1002,via_313_east_side,(?i)via\s*313\s*east\s*side,199,,,
 rx_fix_1003,tacombi_fulton_market,(?i)tacombi.*fulton\s*mar,199,,,
+rx_20250813_300,ukvi,^(?:HOME\W*OFFICE\W*)?UKVI\y|^GOV\.?UK.*(?:UKVI|VISA)\y|^UK\W*VISAS?\W*(?:AND\W*)?IMMIGRATION\y,205,,,"UKVI/Home Office/GOV.UK visa payments"
