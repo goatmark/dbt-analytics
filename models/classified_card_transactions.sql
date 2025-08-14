@@ -259,4 +259,61 @@ select
   , coalesce(ae.gl_code, null)                 as gl_code
   , coalesce(ae.account_name, 'Unknown')       as account_name
 from account_enriched ae
-order by ae.date desc, ae.amount asc
+where
+    1=1
+    and left(ae.description, 5) != 'venmo'
+
+union all
+
+select
+    v.date
+    , v.amount
+    , 0 card_last4
+    , right(v.description, length(v.description)-6) description
+    , 'venmo' merchant_key
+    , 'Venmo' merchant_name
+    , case
+        when v.description ilike '%proto faff surplus seed fund%' then 'Health & Wellness'
+        when v.intermediate_key ilike '%Lorna Kerry%' then 'Food & Groceries'
+        when v.intermediate_key ilike '%Lisa Raich%' then 'Personal Services'
+        when v.intermediate_key ilike '%Sofia Mesa%' then 'Entertainment & Events'
+        else 'Personal Services'
+    end as category
+    , case
+        when v.description ilike '%proto faff surplus seed fund%' then 'Fertility'
+        when v.intermediate_key ilike '%Lorna Kerry%' then 'Groceries'
+        when v.intermediate_key ilike '%Lisa Raich%' then 'Personal Care'
+        when v.intermediate_key ilike '%Sofia Mesa%' then 'Bars & Nightlife'
+        else 'Personal Care'
+    end as subcategory
+    , 'one-off' as billing_model
+    , 'consumption' as spend_nature
+    , 'discretionary' as discretion
+    , case
+        when v.description ilike '%proto faff surplus seed fund%' then 'acct_93cc197271'
+        when v.intermediate_key ilike '%Lorna Kerry%' then 'acct_a0f371c808'
+        when v.intermediate_key ilike '%Lisa Raich%' then 'acct_f183bb01ee'
+        when v.intermediate_key ilike '%Sofia Mesa%' then 'acct_252a9dfee6'
+        else 'acct_f183bb01ee'
+    end account_id
+    , case
+        when v.description ilike '%proto faff surplus seed fund%' then 5550
+        when v.intermediate_key ilike '%Lorna Kerry%' then 5110
+        when v.intermediate_key ilike '%Lisa Raich%' then 6110
+        when v.intermediate_key ilike '%Sofia Mesa%' then 5730
+        else 6110
+    end gl_code
+    , case
+        when v.description ilike '%proto faff surplus seed fund%' then 'Health—Fertility'
+        when v.intermediate_key ilike '%Lorna Kerry%' then 'Food—Groceries'
+        when v.intermediate_key ilike '%Lisa Raich%' then 'Services—Personal Care'
+        when v.intermediate_key ilike '%Sofia Mesa%' then 'Entertainment—Bars & Nightlife'
+        else 'Services—Personal Care'
+    end as account_name
+from
+    public.card_transactions v
+where
+    1=1
+    and left(description,5)='venmo'
+
+order by 1 desc, 2 asc
