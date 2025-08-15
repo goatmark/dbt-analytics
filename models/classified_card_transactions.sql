@@ -263,7 +263,7 @@ where
     1=1
     and left(ae.description, 5) != 'venmo'
 
-union all
+union
 
 select
     v.date
@@ -286,7 +286,7 @@ select
         when v.intermediate_key ilike '%Sofia Mesa%' then 'Bars & Nightlife'
         else 'Personal Care'
     end as subcategory
-    , 'one-off' as billing_model
+    , 'one_off' as billing_model
     , 'consumption' as spend_nature
     , 'discretionary' as discretion
     , case
@@ -314,6 +314,51 @@ from
     public.card_transactions v
 where
     1=1
-    and left(description,5)='venmo'
+    and left(v.description,5)='venmo'
+
+union
+
+select
+    ct.date
+    , ct.amount
+    , ct.card_last4
+    , ct.description description
+    , 'bank_transfer' merchant_key
+    , 'Bank Transfer' merchant_name
+    , case
+        when ct.amount < 0 then 'Travel'
+        when ct.amount > 0 then 'Housing'
+    end as category
+    , case
+        when ct.amount < 0 then 'Flights'
+        when ct.amount > 0 then 'Rent'
+    end as subcategory
+    , case
+        when ct.amount < 0 then 'one_off'
+        when ct.amount > 0 then 'subscription'
+    end billing_model
+    , 'consumption' as spend_nature
+    , case
+        when ct.amount < 0 then 'discretionary'
+        when ct.amount > 0 then 'mandatory'
+    end discretion
+    , case
+        when ct.amount < 0 then 'acct_1d9ae90683'
+        when ct.amount > 0 then 'acct_329a7781bd'
+    end account_id
+    , case
+        when ct.amount < 0 then 5310
+        when ct.amount > 0 then 5010
+    end gl_code
+    , case
+        when ct.amount < 0 then 'Travel—Flights'
+        when ct.amount > 0 then 'Housing-Rent'
+    end as account_name
+from
+    public.card_transactions ct
+where
+    1=1
+    and ct.card_last4 in (3206, 9155)
+    and ct.description ilike '%Lorna%'
 
 order by 1 desc, 2 asc
