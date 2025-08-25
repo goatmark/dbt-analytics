@@ -20,7 +20,8 @@ with base as (
         or ct.description ilike '%Edward Jones%'
         or ct.description ilike '%JPMorgan Chase%'
         or ct.description ilike '%Fedwire%'
-        or ct.description ilike '%Automatic Payment%' 
+        or ct.description ilike '%Automatic Payment%'
+        or ct.description ilike '%Payment Thank You - Web%' 
         then 'Payment'
       else 'Sale'
     end
