@@ -13,9 +13,3 @@ seed-paths: ["seeds"]
 models:
   my_project:
     +materialized: table
-
-seeds:
-  my_project:
-    merchant_dictionary_full:
-      +column_types:
-        pattern_regex: text
