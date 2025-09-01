@@ -793,4 +793,4 @@ rx_fix_1002,via_313_east_side,(?i)via\s*313\s*east\s*side,199,,,
 rx_fix_1003,tacombi_fulton_market,(?i)tacombi.*fulton\s*mar,199,,,
 rx_20250813_300,ukvi,^(?:HOME\W*OFFICE\W*)?UKVI\y|^GOV\.?UK.*(?:UKVI|VISA)\y|^UK\W*VISAS?\W*(?:AND\W*)?IMMIGRATION\y,205,,,"UKVI/Home Office/GOV.UK visa payments"
 rx_20250831_310,ranallis,^RANALLI'?S?\s+(?:WEST\sLOOP|W\sLOOP)\y,199,,,
-rx_20250831_311,live_lean_chicago,^LIVE\WLEAN(?!\WRX)\W*(?:CHI(?:CAGO)?|CHGO)\y,199,,,
+rx_20250831_313,live_lean_chicago,^Dietary Supplements\y,199,,,
